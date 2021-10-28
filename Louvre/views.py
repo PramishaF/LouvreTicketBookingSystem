@@ -8,9 +8,10 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.models import User, auth
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
+from django.views.generic.base import TemplateView
 
 def home(request):
-    return render(request,'index.html')
+    return render(request,'home.html')
 
 def visit(request):
     return render(request,'visit.html')
